@@ -72,8 +72,36 @@ function avocado(){
     const cantidad = calcProduct(iAvocado, valueAvocado);
     document.getElementById('rAvocado').innerHTML = `${cantidad} rc of Avocado`;
 }
-
-
+function pineapple(){
+    const inputPineapple = document.getElementById('cilantro');
+    const valuePineapple = inputPineapple.value;
+    const cantidad = calcProduct(iPineapple, valuePineapple);
+    document.getElementById('rPineapple').innerHTML = `${cantidad} rc of Pineapple`;
+}
+function pickeldOnion(){
+    const inputickledOnion = document.getElementById('cilantro');
+    const valuePickledOnion = inputickledOnion.value;
+    const cantidad = calcProduct(iPickelOnion, valuePickledOnion);
+    document.getElementById('rPickelOnion').innerHTML = `${cantidad} rc of Pickle Onion`;
+}
+function fetaCheese(){
+    const inputFC = document.getElementById('fetaCheese');
+    const valueFC = inputFC.value;
+    const cantidad = calcProduct(iFetaCheese, valueFC);
+    document.getElementById('rFetaCheese').innerHTML =`${cantidad} piles of Feta Cheese`; 
+}
+function lettuce(){
+    const inputLettuce = document.getElementById('lettuce');
+    const valueLettuce = inputLettuce.value;
+    const cantidad = calcProduct(iLettuce, valueLettuce);
+    document.getElementById('rLettuce').innerHTML =`${cantidad} heads of Lettuce`; 
+}
+function cabagge(){
+    const inputCabagge = document.getElementById('cabagge');
+    const valueCabbage = inputCabagge.value;
+    const cantidad = calcProduct(iCabagge, valueCabbage);
+    document.getElementById('rCabbage').innerHTML =`${cantidad} heads of Cabbage`; 
+}
 
 
 
@@ -82,5 +110,10 @@ function calc(){
     onionCilantro();
     cilantro();
     avocado();
+    pineapple();
+    pickeldOnion();
+    fetaCheese();
+    lettuce();
+    cabagge();
 
 }
