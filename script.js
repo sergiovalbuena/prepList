@@ -48,6 +48,12 @@ function calcProduct(idealProducto, actualProducto){
     return idealProducto - actualProducto ;
 }
 
+function eachOne(idName, ideal, idResult){
+    var input = document.getElementById(idName);
+    var value = input.value;
+    var result = calcProduct(ideal, value)
+    document.getElementById(idResult).innerHTML = `${result} rc of cada producto `
+}
 function pico(){
     const inputPico = document.getElementById('picoDeGallo');
     const value = inputPico.value;
@@ -115,5 +121,6 @@ function calc(){
     fetaCheese();
     lettuce();
     cabagge();
+    eachOne('picoDeGallo', iPico, 'rPicoDeGallo');
 
 }
