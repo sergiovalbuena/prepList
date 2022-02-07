@@ -48,6 +48,69 @@ function calcProduct(idealProducto, actualProducto){
     return idealProducto - actualProducto ;
 }
 
+<<<<<<< HEAD
+=======
+function eachOne(idName, ideal, idResult){
+    var input = document.getElementById(idName);
+    var value = input.value;
+    var result = calcProduct(ideal, value)
+    document.getElementById(idResult).innerHTML = `${result} rc of cada producto `
+}
+function pico(){
+    const inputPico = document.getElementById('picoDeGallo');
+    const value = inputPico.value;
+    const cantidadPico = calcProduct(iPico, value);
+    document.getElementById('rPicoDeGallo').innerHTML = `${cantidadPico} rc of Pico de Gallo`;
+}
+function onionCilantro(){
+    const inputOnionCilantro = document.getElementById('onionCilantro');
+    const value = inputOnionCilantro.value;
+    const cantidad = calcProduct(iOnionCilantro, value);
+    document.getElementById('rOnionCilantro').innerHTML = `${cantidad} rc of Onion Cilantro`;
+}
+function cilantro(){
+    const inputCilantro = document.getElementById('cilantro');
+    const valueCilantro = inputCilantro.value;
+    const cantidad = calcProduct(iCilantro, valueCilantro);
+    document.getElementById('rCilantro').innerHTML = `${cantidad} rc of Cilantro`;
+}
+function avocado(){
+    const inputAvocado = document.getElementById('cilantro');
+    const valueAvocado = inputAvocado.value;
+    const cantidad = calcProduct(iAvocado, valueAvocado);
+    document.getElementById('rAvocado').innerHTML = `${cantidad} rc of Avocado`;
+}
+function pineapple(){
+    const inputPineapple = document.getElementById('cilantro');
+    const valuePineapple = inputPineapple.value;
+    const cantidad = calcProduct(iPineapple, valuePineapple);
+    document.getElementById('rPineapple').innerHTML = `${cantidad} rc of Pineapple`;
+}
+function pickeldOnion(){
+    const inputickledOnion = document.getElementById('cilantro');
+    const valuePickledOnion = inputickledOnion.value;
+    const cantidad = calcProduct(iPickelOnion, valuePickledOnion);
+    document.getElementById('rPickelOnion').innerHTML = `${cantidad} rc of Pickle Onion`;
+}
+function fetaCheese(){
+    const inputFC = document.getElementById('fetaCheese');
+    const valueFC = inputFC.value;
+    const cantidad = calcProduct(iFetaCheese, valueFC);
+    document.getElementById('rFetaCheese').innerHTML =`${cantidad} piles of Feta Cheese`; 
+}
+function lettuce(){
+    const inputLettuce = document.getElementById('lettuce');
+    const valueLettuce = inputLettuce.value;
+    const cantidad = calcProduct(iLettuce, valueLettuce);
+    document.getElementById('rLettuce').innerHTML =`${cantidad} heads of Lettuce`; 
+}
+function cabagge(){
+    const inputCabagge = document.getElementById('cabagge');
+    const valueCabbage = inputCabagge.value;
+    const cantidad = calcProduct(iCabagge, valueCabbage);
+    document.getElementById('rCabbage').innerHTML =`${cantidad} heads of Cabbage`; 
+}
+>>>>>>> refs/remotes/origin/main
 
 function eachOne(idName, ideal, idResult, pName){
     var input = document.getElementById(idName);
@@ -58,6 +121,19 @@ function eachOne(idName, ideal, idResult, pName){
 
 
 function calc(){
+<<<<<<< HEAD
+=======
+    pico();
+    onionCilantro();
+    cilantro();
+    avocado();
+    pineapple();
+    pickeldOnion();
+    fetaCheese();
+    lettuce();
+    cabagge();
+    eachOne('picoDeGallo', iPico, 'rPicoDeGallo');
+>>>>>>> refs/remotes/origin/main
 
     eachOne('picoDeGallo', iPico, 'rPicoDeGallo', 'Pico de Gallo');
     eachOne('onionCilantro', iOnionCilantro, 'rOnionCilantro', 'Onion Cilantro');
