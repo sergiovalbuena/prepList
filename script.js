@@ -48,72 +48,64 @@ function calcProduct(idealProducto, actualProducto){
     return idealProducto - actualProducto ;
 }
 
-function pico(){
-    const inputPico = document.getElementById('picoDeGallo');
-    const value = inputPico.value;
-    const cantidadPico = calcProduct(iPico, value);
-    document.getElementById('rPicoDeGallo').innerHTML = `${cantidadPico} rc of Pico de Gallo`;
-}
-function onionCilantro(){
-    const inputOnionCilantro = document.getElementById('onionCilantro');
-    const value = inputOnionCilantro.value;
-    const cantidad = calcProduct(iOnionCilantro, value);
-    document.getElementById('rOnionCilantro').innerHTML = `${cantidad} rc of Onion Cilantro`;
-}
-function cilantro(){
-    const inputCilantro = document.getElementById('cilantro');
-    const valueCilantro = inputCilantro.value;
-    const cantidad = calcProduct(iCilantro, valueCilantro);
-    document.getElementById('rCilantro').innerHTML = `${cantidad} rc of Cilantro`;
-}
-function avocado(){
-    const inputAvocado = document.getElementById('cilantro');
-    const valueAvocado = inputAvocado.value;
-    const cantidad = calcProduct(iAvocado, valueAvocado);
-    document.getElementById('rAvocado').innerHTML = `${cantidad} rc of Avocado`;
-}
-function pineapple(){
-    const inputPineapple = document.getElementById('cilantro');
-    const valuePineapple = inputPineapple.value;
-    const cantidad = calcProduct(iPineapple, valuePineapple);
-    document.getElementById('rPineapple').innerHTML = `${cantidad} rc of Pineapple`;
-}
-function pickeldOnion(){
-    const inputickledOnion = document.getElementById('cilantro');
-    const valuePickledOnion = inputickledOnion.value;
-    const cantidad = calcProduct(iPickelOnion, valuePickledOnion);
-    document.getElementById('rPickelOnion').innerHTML = `${cantidad} rc of Pickle Onion`;
-}
-function fetaCheese(){
-    const inputFC = document.getElementById('fetaCheese');
-    const valueFC = inputFC.value;
-    const cantidad = calcProduct(iFetaCheese, valueFC);
-    document.getElementById('rFetaCheese').innerHTML =`${cantidad} piles of Feta Cheese`; 
-}
-function lettuce(){
-    const inputLettuce = document.getElementById('lettuce');
-    const valueLettuce = inputLettuce.value;
-    const cantidad = calcProduct(iLettuce, valueLettuce);
-    document.getElementById('rLettuce').innerHTML =`${cantidad} heads of Lettuce`; 
-}
-function cabagge(){
-    const inputCabagge = document.getElementById('cabagge');
-    const valueCabbage = inputCabagge.value;
-    const cantidad = calcProduct(iCabagge, valueCabbage);
-    document.getElementById('rCabbage').innerHTML =`${cantidad} heads of Cabbage`; 
-}
 
+function eachOne(idName, ideal, idResult, pName){
+    var input = document.getElementById(idName);
+    var value = input.value;
+    var result = calcProduct(ideal, value)
+    document.getElementById(idResult).innerHTML = `${result} rc of ${pName} `
+}
 
 
 function calc(){
-    pico();
-    onionCilantro();
-    cilantro();
-    avocado();
-    pineapple();
-    pickeldOnion();
-    fetaCheese();
-    lettuce();
-    cabagge();
 
+    eachOne('picoDeGallo', iPico, 'rPicoDeGallo', 'Pico de Gallo');
+    eachOne('onionCilantro', iOnionCilantro, 'rOnionCilantro', 'Onion Cilantro');
+    eachOne('cilantro', iCilantro, 'rCilantro', 'Cilantro');
+    eachOne('avocado', iAvocado, 'rAvocado', 'Avocado');
+    eachOne('pineapple', iPineapple, 'rPineapple', 'Pineapple');
+    eachOne('pickledOnion', iPickelOnion, 'rPickelOnion', 'Pickel Onion');
+    eachOne('fetaCheese', iFetaCheese, 'rFetaCheese', 'Feta Cheese');
+    eachOne('lettuce', iLettuce, 'rLettuce', 'Chopped Lettuce');
+    eachOne('cabagge', iCabagge, 'rCabbage', 'Cabagge Slaw');
+    eachOne('salsaVerde', iSalsaVerde, 'rSalsaVerde', 'Salsa Verde');
+    eachOne('salsaCruda', iSalsaCruda, 'rSalsaCruda', 'Salsa Cruda');
+    eachOne('anchoMiel', iAnchoMiel, 'rAnchoMiel', 'Ancho Miel');
+    eachOne('birriamenCilantro', iBCilantro, 'rBCilantro', 'Birriamen Cilantro');
+    eachOne('birriamenOnion', iBOnion, 'rBOnion', 'Birriamen Onion'); 
+
+    eachOne('mozza100', iMozza100, 'rM100', 'Mozzarella 100gr');
+    eachOne('mozza150', iMozza150, 'rM150', 'Mozzarella 150gr');
+    eachOne('mozza1l', iMozza1l, 'rM1l', 'Mozza 1Lt')
+    eachOne('nachoCheese', iNachoCheese, 'rNachoCheese', 'Nacho Cheese');
+
+    eachOne('anchoBottle', iAnchoBottle, 'rAnchoBottle', 'Ancho Miel Bottle');
+    eachOne('chipotle', iChipotle, 'rChipotle', 'Chipotle');
+    eachOne('cream', iCream, 'rCream', 'Sour Cream');
+    eachOne('beans', iBeans, 'rBeans', 'Beans Paste');
+    eachOne('cajeta', iCajeta, 'rCajeta', 'Cajeta');
+
+    eachOne('chicken', iChicken, 'rChicken', 'Chicken');
+    eachOne('potato', iPotato, 'rPotato', 'Potato Tots');
+    eachOne('tuna', iTuna, 'rTuna', 'Tuna');
+    eachOne('yam', iYam, 'rYam', 'Yam');
+    eachOne('cauli'. iCauli, 'rCauli', 'Cauliflower')
+    eachOne('fish', iFish, 'rFish', 'Baja Fish');
+    eachOne('Cabo', iCabo, 'rCabo', 'Cabo Shrimp');
+    eachOne('asada', iAsada, 'rAsada', 'Asada');
+
+    eachOne('eggs', iEggs, 'rEggs', 'Poached Eggs');
+    eachOne('dryOnion', iDry, 'rDry', 'Dry Onion and cabagge');
+    eachOne('paprika', iPrapika, 'rPaprika', 'Paprika ans salt');
+    eachOne('cinnamon', iCinnamon, 'rCinnamon', 'Cinnamon andSugar ');
+    eachOne('plainCabbage', iPlainCabbage, 'rPlainCabbage', 'Plain Cabbage');
+    eachOne('encurtido', iEncurtido, 'rEncurtido', 'Encurtido Chino ');
+    eachOne('tortillaChips', iTortillaChips, 'rTortillaChips', 'Tortilla Chips');
+    eachOne('nachos', iNachos, 'rNachos', 'Nachos ');
+    eachOne('horchata', iHorchata, 'rHorchata', 'Horchata');
+    eachOne('jamaica', iJamaica, 'rJamaica', 'Agua de jamaica');
+    
+    
+    
+    
 }
